@@ -164,8 +164,8 @@ parser.add_argument("--mixed-lowest", default=True, action=argparse.BooleanOptio
 parser.add_argument("--no-dnssec", default=False, action='store_true', help="Don't use dnssec to validate if MX delegation is save, even if available. Implies --no-dane.")
 parser.add_argument("--no-dane", default=False, action='store_true', help="Don't use dane, even if available.")
 parser.add_argument("--force-dane-only", default=False, action='store_true', help="Force dane using 'dane_only' security level if dane could be detected (will use only 'dane' security level otherwise).")
-parser.add_argument("--include-policy", metavar="FILE", action='append', help="Use domains listed given policy file (can be used multiple times).")
-parser.add_argument("--include-from-log", metavar="FILE", action="append", nargs="+", help="Use domains logged as connected to in given policy file.")
+parser.add_argument("--include-policy", metavar="FILE", action='append', help="Use domains listed in given policy file (can be used multiple times).")
+parser.add_argument("--include-from-log", metavar="FILE", action="append", nargs="+", help="Use domains logged as connected to in given postfix logfile.")
 parser.add_argument("domain", metavar="[--] DOMAIN", type=str, help="Use additional domains given on commandline. Use '--' to separate them from files listed for --include-from-log (if used).", nargs="*")
 args = parser.parse_args()
 

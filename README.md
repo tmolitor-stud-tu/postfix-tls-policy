@@ -33,12 +33,12 @@ optional arguments:
   --no-dane             Don't use dane, even if available.
   --force-dane-only     Force dane using 'dane_only' security level if dane could be detected (will use only 'dane' security level otherwise).
   --include-policy FILE
-                        Use domains listed given policy file (can be used multiple times).
+                        Use domains listed in given policy file (can be used multiple times).
   --include-from-log FILE [FILE ...]
-                        Use domains logged as connected to in given policy file.
+                        Use domains logged as connected to in given postfix logfile.
 ```
 
-This project is based upon an abandoned project described over here: https://www.cs-ware.de/blog/archives/175
+This project is based upon the original project described over here: https://www.cs-ware.de/blog/archives/175
 
 # Misc
 I take pull requests to include more domains.
